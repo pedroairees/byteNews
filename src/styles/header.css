@@ -1,0 +1,34 @@
+#primary {
+    padding-block: 1.5rem;
+
+    strong {
+        font: 700 1rem/140% var(--font-archivo);
+    }
+
+    div{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    div:nth-child(2) {
+        margin-inline: auto;
+    }
+
+    div:nth-child(3) {
+        justify-self: end;
+    }
+}
+
+#secondary {
+    padding-block: 14px;
+    border: 1px solid var(--stroke-color);
+    border-inline: none;
+    justify-content: space-between;
+
+    a {
+        font: 600 0.875rem/145% var(--font-archivo);
+    }
+}
+
+

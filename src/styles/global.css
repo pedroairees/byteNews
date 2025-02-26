@@ -15,12 +15,12 @@
 
     /* fonts */
     --font-archivo: "Archivo", sans-serif;
-    --h1: 800 24px/135% var(--font-archivo);
-    --h2: 800 16px/140% var(--font-archivo);
-    --h3: 800 14px/140% var(--font-archivo);
-    --text-span: 600 14px/145% var(--font-archivo);
-    --text: 400 16px/140% var(--font-archivo);
-    --text-sm: 400 14px/160% var(--font-archivo);
+    --h1: 800 1.5rem/135% var(--font-archivo);
+    --h2: 800 1rem/140% var(--font-archivo);
+    --h3: 800 0.875rem/140% var(--font-archivo);
+    --text-span: 600 0.875rem/145% var(--font-archivo);
+    --text: 400 1rem/140% var(--font-archivo);
+    --text-sm: 400 0.875rem/160% var(--font-archivo);
 }
 
 body {
@@ -29,10 +29,17 @@ body {
     background-color: var(--bg-color);
 }
 
+.container {
+    max-width: 1280px;
+    padding-inline: 2rem;
+    margin-inline: auto;
+}
+
 a {
     text-decoration: none;
     color: inherit;
     transition: 0.3s;
+    color: var(--text-color-secondary);
 }
 
 a:hover {
@@ -41,4 +48,13 @@ a:hover {
 
 h1, h2, h3 {
     font: inherit;
+}
+
+/* utility-first */
+.grid {
+    display: grid;
+}
+
+.grid-flow-col {
+    grid-auto-flow: column;
 }
