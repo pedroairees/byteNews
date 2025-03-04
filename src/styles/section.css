@@ -16,6 +16,16 @@
             top: 50%;
             background: linear-gradient(180deg, rgba(2, 6, 23, 0.00) 0%, #020617 100%);
         }
+
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            padding: 1.5rem;
+
+            h2 {
+                margin-top: 0.5rem;
+            }
+        }
     }
     
 }
