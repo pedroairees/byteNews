@@ -1,3 +1,26 @@
+section header {
+    border-top: 1px solid var(--stroke-color);
+    padding-block: .75rem 1.5rem;
+    font: var(--text-span);
+
+    a {
+        justify-self: end;
+        align-items: center;
+        gap: .25rem;
+
+        span {
+            background-image: url(../icons/ArrowRight.svg);
+            width: 1rem;
+            height: 1rem;
+            transition: 0.3s;
+        }
+
+        &:hover span {
+            background-image: url(../icons/ArrowRightHover.svg);
+        }
+    }
+}
+
 #featured {
     img{
         height: 100%;
@@ -43,6 +66,27 @@
 }
 
 #weekly {
+    &>div {
+        grid-template-columns: repeat(4, 18.25rem);
+    }
+
+    img {
+        height: 10rem;
+    }
+
+    figure {
+        position: relative;
+        .content-tag {
+            position: absolute;
+            top: .5rem;
+            left: .5rem;
+        }
+
+        p {
+            font-weight: 800;
+        }
+    }
+
     .paragraph-sec {
         /* adicionei as linhas abaixo */
         display: -webkit-box;
