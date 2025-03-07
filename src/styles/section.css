@@ -22,10 +22,34 @@
             bottom: 0;
             padding: 1.5rem;
 
+            &:has(.text-lg) {
+                padding: .75rem;
+            }
+
             h2 {
-                margin-top: 0.5rem;
+                margin-top: .5rem;
+                
+                /* adicionei as linhas abaixo */
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
     }
     
+}
+
+#weekly {
+    .paragraph-sec {
+        /* adicionei as linhas abaixo */
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
