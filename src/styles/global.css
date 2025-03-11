@@ -49,8 +49,19 @@ h1, h2, h3 {
 
 
 main {
-    margin-top: 40px;
-    gap: 5rem;
+    margin-block: 2.5rem 5rem;
+    row-gap: 5rem;
+    column-gap: 2rem;
+
+    grid-template-columns: 2fr 1.5fr;
+
+    grid-template-areas: 
+    "featured featured"
+    "weekly weekly"
+    "ai aside"
+    ;
+
+
 }
 
 .content-tag {
