@@ -1,0 +1,40 @@
+@import url(./global.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: var(--text-color-primary);
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: var(--text-color-secondary);
+}
+
+a:hover {
+    color: var(--brand-color-light);
+}
+
+.menu {
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    font: var(--h1);
+    font-size: 4rem;
+    text-shadow: 0px 29px 15px rgba(206,206,206,0.47);
+}
