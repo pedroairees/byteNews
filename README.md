@@ -24,4 +24,4 @@ O **ByteCode** é um site de notícias sobre o mundo da tecnologia.
 
 ### 📖 License
 
-This project is under the MIT license. See the file [LICENSE](https://github.com/pedroairees/devstage/blob/main/LICENSE) for more details.
+This project is under the MIT license. See the file [LICENSE](https://github.com/pedroairees/byteNews/blob/main/LICENSE) for more details.
