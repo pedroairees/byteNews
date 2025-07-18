@@ -27,6 +27,7 @@ body {
     font: var(--text);
     color: var(--text-color-primary);
     background-color: var(--bg-color);
+    overflow-x: hidden;
 }
 
 img {

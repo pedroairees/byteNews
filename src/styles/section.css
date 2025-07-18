@@ -71,7 +71,11 @@ section header {
     grid-area: weekly;
 
     &>div {
-        grid-template-columns: repeat(4, 18.25rem);
+        /*grid-template-columns: repeat(4, 18.25rem);*/
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     img {
@@ -80,6 +84,7 @@ section header {
 
     figure {
         position: relative;
+        width: 18rem;
         .content-tag {
             position: absolute;
             top: .5rem;

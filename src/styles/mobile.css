@@ -1,0 +1,39 @@
+.desktop-only {
+    display: none;
+}
+
+/*Header*/
+#secondary {
+    gap: 2rem;
+    overflow: auto;
+
+    & a {
+        width: max-content;
+    }
+}
+
+/*main*/
+#featured {
+   grid-auto-flow: row;
+
+    & > div {
+        grid-template-columns: 1fr;
+        
+        & .card {
+            height: 12.5rem;
+
+            & img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+main {
+    grid-template-areas: 
+    "featured featured"
+    "weekly weekly"
+    "ai ai"
+    "aside aside"
+    ;
+}
